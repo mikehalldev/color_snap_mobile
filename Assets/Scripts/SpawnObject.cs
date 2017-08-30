@@ -7,9 +7,6 @@ public class SpawnObject : MonoBehaviour {
 	[SerializeField] GameObject[] objs;
 	private Transform cam;
 
-	public float spawnMin;
-
-	public float spawnMax;
 	public float spawnDistance;
 
 	public float startSpawnDistance;
@@ -26,8 +23,8 @@ public class SpawnObject : MonoBehaviour {
 
 	void Update() {
 		if (transform.position.y < nextLocation) {
-			Invoke ("spawn", Random.Range (spawnMin, spawnMax));
-			nextLocation = Mathf.Round(transform.position.y - spawnDistance);
+			Invoke ("spawn",0f);
+			nextLocation = Mathf.Round(transform.position.y - spawnDistance + Random.Range(-5, 5));
 		}
 	}
 

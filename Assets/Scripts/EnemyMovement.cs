@@ -11,7 +11,10 @@ public class EnemyMovement : MonoBehaviour {
 	private bool dirRight;
 
 	void Start () {
-		dirRight = true;
+		if (Random.value >= 5)
+			dirRight = true;
+		else
+			dirRight = false;
 	}
 	
 	void Update() {
