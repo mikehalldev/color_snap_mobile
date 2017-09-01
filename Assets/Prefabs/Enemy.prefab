@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 54999731917612894}
   - component: {fileID: 114464221879561214}
   - component: {fileID: 114182667224369246}
+  - component: {fileID: 114799925245759892}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -125,6 +126,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerExplosion: {fileID: 1214630863969102, guid: a7be88c474eddcf4c9a08059fec9578f,
     type: 2}
+--- !u!114 &114799925245759892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707923374381560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77e4e6fbdb08d948ade2231c63fb835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135095720320729072
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23690927392641970}
   - component: {fileID: 114416518526066668}
   - component: {fileID: 54822795400785122}
+  - component: {fileID: 114462571541199014}
   m_Layer: 0
   m_Name: Red Platform Long
   m_TagString: Red
@@ -123,3 +124,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformMat: {fileID: 2100000, guid: ede60ba6f6dcbcb4a8900e159210b6da, type: 2}
   transparent: 0
+--- !u!114 &114462571541199014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978483728932222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77e4e6fbdb08d948ade2231c63fb835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23619935272868594}
   - component: {fileID: 114490197591606972}
   - component: {fileID: 54896254272073332}
+  - component: {fileID: 114237572133193530}
   m_Layer: 0
   m_Name: Blue Platform Long
   m_TagString: Blue
@@ -110,6 +111,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114237572133193530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984809217767658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77e4e6fbdb08d948ade2231c63fb835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114490197591606972
 MonoBehaviour:
   m_ObjectHideFlags: 1
