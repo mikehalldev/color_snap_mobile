@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
 	public Text distanceText;
 
 	public Text gameOverText;
+	
+	public GameObject restartButton;
 
 	private Transform playerTransform;
 
@@ -41,10 +43,8 @@ public class GameController : MonoBehaviour {
 			distanceText.text = "Score:  " + -score;
 		} else {
 			music.Stop();
-			gameOverText.text = "Game Over!\nScore:  " + -score + "\nTap to Restart";
-			if ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) || (Input.GetButton("Submit"))) {
-				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-			}
+			gameOverText.text = "Game Over!\nScore:  " + -score;
+			restartButton.SetActive(true);
 		}
 		
 	}

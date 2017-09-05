@@ -620,6 +620,7 @@ MonoBehaviour:
   isBlue: 1
   distanceText: {fileID: 428617842}
   gameOverText: {fileID: 129754212}
+  restartButton: {fileID: 1240863473}
 --- !u!82 &764353013
 AudioSource:
   m_ObjectHideFlags: 0
@@ -629,7 +630,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f2ae8534bc0fb134bbf44f7384599f1a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ae86fc7bbd0c0e949bc0bbaf52b91187, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -1114,7 +1115,8 @@ Prefab:
       propertyPath: transparent
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114462571541199014, guid: fd5e3cded52de0d4e9260045845e97bd, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fd5e3cded52de0d4e9260045845e97bd, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1240863473
@@ -1128,6 +1130,7 @@ GameObject:
   - component: {fileID: 1240863477}
   - component: {fileID: 1240863476}
   - component: {fileID: 1240863475}
+  - component: {fileID: 1240863478}
   m_Layer: 5
   m_Name: Restart Button
   m_TagString: Untagged
@@ -1151,7 +1154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240863475
@@ -1228,6 +1231,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240863473}
+--- !u!114 &1240863478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240863473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4a16a9e1137684b81e1d0bccd98715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1314058999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,7 +1466,8 @@ Prefab:
       propertyPath: transparent
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114237572133193530, guid: b8ccec0e6bcef854a93c459c9eb60d8b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b8ccec0e6bcef854a93c459c9eb60d8b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1717702121
